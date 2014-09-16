@@ -3,3 +3,4 @@
 
 require ['scalejs!core'], (core) ->
 
+    undefined

@@ -62,7 +62,6 @@ var ScalejsExtensionGenerator = yeoman.generators.Base.extend({
       this.dest.mkdir('src');
     },
     app: function () {
-      this.dest.mkdir('src/app');
 
       var context = {
           ext_name: this.name,

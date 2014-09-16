@@ -1,6 +1,12 @@
 {
   "name": "<%=ext_name%>",
   "version": "0.0.0",
+  "main": [
+    "dist/<%=ext_name%>.min.js"
+  ],
+  "ignore": [
+    "*", "!dist/*.js"
+  ]
   "dependencies": {
     "requirejs": "latest",
     "almond": "latest",

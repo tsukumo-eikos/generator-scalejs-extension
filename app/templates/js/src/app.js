@@ -1,11 +1,10 @@
 /* global require */
 require([
-    'scalejs!application'
+    'scalejs!core'
 ], function (
-    app
+    core
 ) {
     'use strict';
 
-    app.run();
 });
 
