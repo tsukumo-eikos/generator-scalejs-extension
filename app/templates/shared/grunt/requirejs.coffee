@@ -5,8 +5,8 @@ module.exports = ( grunt ) ->
 
     build:
         options:
-            name: 'almond'
             include: '<%=package.name%>'
+            exclude: ['scalejs']
             mainConfigFile: 'rjsconfig.js'
             out: 'build/<%=package.name%>.js'
             optimize: 'none'
