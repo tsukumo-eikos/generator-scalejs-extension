@@ -6,7 +6,7 @@
   ],
   "ignore": [
     "*", "!dist/*.js"
-  ]
+  ],
   "dependencies": {
     "requirejs": "latest",
     "almond": "latest",
