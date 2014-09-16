@@ -25,6 +25,7 @@ require.config({
     },
     scalejs: {
         extensions: [
+            '<%=ext_name%>'
         ]
     }
 });
