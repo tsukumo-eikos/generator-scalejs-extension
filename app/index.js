@@ -70,9 +70,9 @@ var ScalejsExtensionGenerator = yeoman.generators.Base.extend({
       };
 
       if (this.coffee) {
-          this.template('coffee/src/app.coffee', 'src/' + this.name + '.coffee', context);
+          this.template('coffee/src/ext.coffee', 'src/' + this.name + '.coffee', context);
       } else {
-          this.template('js/src/app.js', 'src/' + this.name + '.js', context);
+          this.template('js/src/ext.js', 'src/' + this.name + '.js', context);
       }
 
       this.src.copy('shared/rjsconfig.js', 'rjsconfig.js');
@@ -85,6 +85,12 @@ var ScalejsExtensionGenerator = yeoman.generators.Base.extend({
           coffee_enabled: this.coffee,
           less_enabled: this.less
       };
+
+      if (this.coffee) {
+        this.template('coffee/test/ext.test.coffee', 'test/' + this.name + '.test.coffee', context);
+      } else {
+        this.template('js/test/ext.test.js', 'test/' + this.name + '.test.js', context);
+      }
 
       this.template('shared/test/index.html', 'test/index.html', context);
       this.template('shared/test/all.tests.js', 'test/all.tests.js', context);

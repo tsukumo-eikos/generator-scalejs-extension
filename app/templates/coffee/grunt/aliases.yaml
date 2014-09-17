@@ -1,9 +1,9 @@
 lint:
-    - 'newer:coffeelint'
+    - 'newer:coffeelint:extension'
 
 compile:
     - 'lint'
-    - 'newer:coffee'
+    - 'newer:coffee:extension'
 
 config:
     - 'bower'
@@ -19,6 +19,8 @@ release:
     - 'copy'
 
 test:
+    - 'newer:coffeelint:test'
+    - 'newer:coffee:test'
     - 'if-missing:curl-dir:jasmine'
     - 'connect:test'
 

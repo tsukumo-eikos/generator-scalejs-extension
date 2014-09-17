@@ -4,5 +4,7 @@ module.exports =
     options:
         configFile: '.coffeelintrc'
 
-    compile: ['src/**/*.coffee']
+    extension: ['src/**/*.coffee']
+
+    test: ['test/**/*.coffee']
 

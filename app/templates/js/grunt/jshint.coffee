@@ -4,5 +4,6 @@ module.exports = ( grunt ) ->
     options.reporter = require 'jshint-stylish'
 
     options: options
-    compile: ['src/**/*.js']
+    extension: ['src/**/*.js']
+    test: ['test/**/*.js']
 
