@@ -1,5 +1,5 @@
 lint:
-    - 'newer:jshint:extension'
+    - 'jshint:extension'
 
 compile:
     - 'lint'
@@ -18,7 +18,7 @@ release:
     - 'copy'
 
 test:
-    - 'newer:jshint:extension'
+    - 'jshint:extension'
     - 'if-missing:curl-dir:jasmine'
     - 'connect:test'
 
