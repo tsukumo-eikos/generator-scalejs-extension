@@ -32,7 +32,7 @@ require.config({
 
 require(['boot'], function () {
     require ([
-        './<%= ext_name %>.test.js'
+        './<%= ext_name %>.test'
     ], function () {
         window.onload();
     });
