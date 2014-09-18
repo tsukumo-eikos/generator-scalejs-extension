@@ -3,15 +3,15 @@ define([
 ], function(
     core
 ) {
-    var <%=ext_name%> = core.<%=ext_name%>;
+    var <%=ext_jsname%> = core.<%=ext_jsname%>;
 
     // For deeper testing, log to console
-    console.log('core.<%=ext_name%>: ', <%=ext_name%>);
+    console.log('core.<%=ext_jsname%>: ', <%=ext_jsname%>);
 
-    return describe('core.<%=ext_name%>', function() {
+    describe('core.<%=ext_jsname%>', function() {
 
         it('is defined', function() {
-            return expect(<%=ext_name%>).toBeDefined();
+            expect(<%=ext_jsname%>).toBeDefined();
         });
 
     });

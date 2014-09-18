@@ -65,6 +65,7 @@ var ScalejsExtensionGenerator = yeoman.generators.Base.extend({
 
       var context = {
           ext_name: this.name,
+          ext_jsname: this.name.replace(/(^scalejs\.|-.*$)/g, ''),
           coffee_enabled: this.coffee,
           less_enabled: this.less
       };
@@ -82,6 +83,7 @@ var ScalejsExtensionGenerator = yeoman.generators.Base.extend({
 
       var context = {
           ext_name: this.name,
+          ext_jsname: this.name.replace(/(^scalejs\.|-.*$)/g, ''),
           coffee_enabled: this.coffee,
           less_enabled: this.less
       };

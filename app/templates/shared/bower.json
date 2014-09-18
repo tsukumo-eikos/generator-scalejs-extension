@@ -1,6 +1,10 @@
 {
   "name": "<%=ext_name%>",
   "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+  ],
+  "description": "",
   "main": [
     "dist/<%=ext_name%>.min.js"
   ],
@@ -8,9 +12,10 @@
     "*", "!dist/*.js"
   ],
   "dependencies": {
-    "requirejs": "latest",
-    "almond": "latest",
     "scalejs": "lisovin/scalejs"
+  },
+  "devDependencies": {
+    "requirejs": "latest"
   }
 }
 

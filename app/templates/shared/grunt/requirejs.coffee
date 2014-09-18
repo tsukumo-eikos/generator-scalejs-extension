@@ -5,6 +5,7 @@ module.exports = ( grunt ) ->
 
     build:
         options:
+            baseUrl: 'src'
             include: '<%=package.name%>'
             exclude: ['scalejs']
             mainConfigFile: 'rjsconfig.js'
